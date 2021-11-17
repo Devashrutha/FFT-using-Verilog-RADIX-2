@@ -1,6 +1,6 @@
 # FFT-using-Verilog-and-Python
- [![Generic badge](https://img.shields.io/badge/tests-passed-green.svg)](![fft-11111111](https://user-images.githubusercontent.com/61559101/142257997-073c9d52-ccb6-4d82-a8e0-6f7274240be6.PNG)
-)
+ [![Generic badge](https://img.shields.io/badge/tests-passed-green.svg)](https://user-images.githubusercontent.com/61559101/142257997-073c9d52-ccb6-4d82-a8e0-6f7274240be6.PNG)
+
 
  
 FFT is responsible for converting a signal into individual spectral components and thereby providing frequency information about the signal. The implementation of FFT is very efficient and vast in the field of Digital Signal Processing and Communication. Verilog implementation of the floating point FFT with reduced generation logic or reduced complexity is the proposed architecture, where the
