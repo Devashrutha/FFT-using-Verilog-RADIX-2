@@ -1,6 +1,3 @@
-[![Generic badge](https://img.shields.io/badge/test-passed-green.svg)](https://user-images.githubusercontent.com/61559101/142257997-073c9d52-ccb6-4d82-a8e0-6f7274240be6.PNG)
-[![Generic badge](https://img.shields.io/badge/RTL-schematic-red.svg)](https://user-images.githubusercontent.com/61559101/142258670-43d4ec95-bba3-4086-84b8-b5293848a852.PNG)
-
 `timescale 1 ns/1 ns
 module dit_fft_8(clk,sel,yr,yi);
 input clk;
