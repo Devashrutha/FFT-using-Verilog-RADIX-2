@@ -22,6 +22,9 @@ The difference in the speed can be enormous, especially for long data sequences 
 be in the thousands or millions. Many FFT algorithms are much more accurate than
 evaluating the DFT directly from the definition.
 
+Decimation In Time(DIT) FFT algorithm rearranges the DFT formula into 2 parts, as a sum of odd and even parts.
+
+
 
 
 
