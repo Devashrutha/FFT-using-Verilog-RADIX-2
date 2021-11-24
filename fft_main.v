@@ -25,10 +25,10 @@ assign x5=9'b1;//1
 assign x6=9'b1;//1
 assign x7=9'b1;//1
 //stage1
-bfly2_4 s11(x0,x4,w0r,w0i,x10r,x10i,x11r,x11i);
-bfly2_4 s12(x2,x6,w0r,w0i,x12r,x12i,x13r,x13i);
-bfly2_4 s13(x1,x5,w0r,w0i,x14r,x14i,x15r,x15i);
-bfly2_4 s14(x3,x7,w0r,w0i,x16r,x16i,x17r,x17i);
+  bfly2_4 s11(x0,x4,w0r,w0i,x10r,x10i,x11r,x11i);              //1st 2 point DFT
+  bfly2_4 s12(x2,x6,w0r,w0i,x12r,x12i,x13r,x13i);              //2st 2 point DFT
+  bfly2_4 s13(x1,x5,w0r,w0i,x14r,x14i,x15r,x15i);              //3st 2 point DFT
+  bfly2_4 s14(x3,x7,w0r,w0i,x16r,x16i,x17r,x17i);              //4st 2 point DFT
 //stage2
 bfly2_4 s21(x10r,x12r,w0r,w0i,x20r,x20i,x22r,x22i);
 bfly2_4 s22(x11r,x13r,w2r,w2i,x21r,x21i,x23r,x23i);
