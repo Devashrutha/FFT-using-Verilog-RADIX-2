@@ -22,7 +22,51 @@ The difference in the speed can be enormous, especially for long data sequences 
 be in the thousands or millions. Many FFT algorithms are much more accurate than
 evaluating the DFT directly from the definition.
 
+DIT FFT:
+
 Decimation In Time(DIT) FFT algorithm rearranges the DFT formula into 2 parts, as a sum of odd and even parts.
+
+![DFT to FFT](https://user-images.githubusercontent.com/61559101/143253529-b7cce322-2402-4afd-89b7-3ef26a9e399b.PNG)
+
+For even numbered discrete time indices n=[0,2,4,..,N-2] and odd numbered discrete time indices n=[1,3,5,...,N-1]. The odd indexed DFT is multiplied by a twiddle factor term WkN=e^−(i2πkN). This is called a decimation in time because the time samples are rearranged in alternating groups, and a radix-2 algorithm because there are two groups.
+
+The number of stages in the flowgraph is given by M=log2N, where N is the length of the sequence.
+
+📌3 stages to construct an 8-point DFT using Radix-2 FFT algorithm
+
+🔺STAGE 1:
+Consists of 4 butterflies. Each butterfly has 2 inputs and two outputs. The inputs are given 
+after the bit reversal of the input sequence.
+
+🔺STAGE 2:
+The input samples to each butterfly are separated by N/4 samples i.e., 2 samples and there are 
+two sets of butterflies. In each set of butterflies, the twiddle factor exponents are the same and 
+separated by two.
+
+🔺STAGE 3:
+This stage includes decomposing of N/4 points transforms into N/8 points transforms.
+
+Bit Reversal:
+| BIT REVERSED BINARY(INPUT)  | BINARY(OUTPUT) |
+| ------------- | ------------- |
+| 000 x(0)  | 000 X(0)  |
+| 100 x(4)  | 001 X(1)  |
+| 010 x(2)  | 010 X(2)  |
+| 110 x(6)  | 011 X(3)  |
+| 001 x(1)  | 100 X(4)  |
+| 101 x(5)  | 101 X(5)  |
+| 011 x(3)  | 110 X(6)  |
+| 111 x(7)  | 111 X(7)  |
+
+Stages of 8-Point DIT FFT Algorithm:
+
+![Stages of 8 point FFt](https://user-images.githubusercontent.com/61559101/143257088-70ef836a-7a97-466b-bb05-28c585471795.PNG)
+
+ Flow Graph of 8-Point DIT FFT Algorithm:
+ 
+![8 point DIT FFT](https://user-images.githubusercontent.com/61559101/143257478-decf9d98-5d57-4b2e-9c7e-fcf304a62d98.png)
+
+
 
 
 
