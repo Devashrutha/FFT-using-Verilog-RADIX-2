@@ -67,9 +67,16 @@ Stages of 8-Point DIT FFT Algorithm:
 ![8 point DIT FFT](https://user-images.githubusercontent.com/61559101/143257478-decf9d98-5d57-4b2e-9c7e-fcf304a62d98.png)
 
 
+Summary:
 
-
-
-
-
-
+1) The number of input samples N = 2M , where, M is an integer.
+2) The input sequence is shuffled through bit-reversal.
+3) The number of stages in the flowgraph is given by M=log2N.
+4) Each stage consists of N/2 butterflies.
+5) Inputs/outputs of each butterfly are separated by 2^(m-1) samples,where m representsthe stage index, i.e., for first stage m=1 and for the second stage m=2 so on.
+6) The number of complex multiplications is given by (N/2)𝐥𝐨𝐠𝟐 𝑵.
+7) The number of complex additions is given by N*log2N.
+8) The twiddle factor exponents are a function of the stage index m and is given by k=(N*t/2^m) where, t=0,1,2,.....2^(m-1) -1.
+9) The number of sets or sections of butterflies in each stage is given by the formula
+2^(M-m).
+10)The exponent repeat factor (ERF), which is the number of times the exponent sequence associated with m is repeated is given by 2^(M-n).`
