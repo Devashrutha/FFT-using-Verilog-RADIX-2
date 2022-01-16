@@ -52,7 +52,7 @@ case(sel)
 7:begin yr=y7r; yi=y7i; end
 endcase
 endmodule
-module bfly2_4(x,y,wr,wi,x0r,x0i,x1r,x1i);// W08 & W28
+module bfly2_4(x,y,wr,wi,x0r,x0i,x1r,x1i);
 input signed [8:0]x,y;
 input signed [8:0]wr,wi;
 output[8:0]x0r,x0i,x1r,x1i;
@@ -64,7 +64,7 @@ assign x0i=p2[8:0];
 assign x1r=x-p1[8:0];
 assign x1i=-p2[8:0];
 endmodule
-module bfly4_4(xr,xi,yr,yi,wr,wi,x0r,x0i,x1r,x1i); //W18 & W38
+module bfly4_4(xr,xi,yr,yi,wr,wi,x0r,x0i,x1r,x1i);
 input signed [8:0]xr,xi,yr,yi;
 input signed [8:0]wr,wi;
 output [8:0]x0r,x0i,x1r,x1i;
