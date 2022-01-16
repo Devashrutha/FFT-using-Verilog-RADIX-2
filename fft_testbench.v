@@ -4,15 +4,18 @@ reg clk;
 reg [2:0] sel;
 wire [8:0] yr,yi;
 dit_fft_8 dit_fft_8_test(.clk(clk),.sel(sel),.yr(yr),.yi(yi));
-parameter clkper = 10;
+  
 initial
 begin
 clk = 1;
 end
+
 always
 begin
-#(clkper/2) clk = ~clk; //initializing clock
+//TOGGLE THE CLOCK FOR EVERY 5ns
+#5 clk = ~clk;
 end
+
 initial
 begin
 sel = 3'b000;#10
