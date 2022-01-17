@@ -4,8 +4,8 @@
 
 
  
-FFT is responsible for converting a signal into individual spectral components and thereby providing frequency information about the signal. The implementation of FFT is very efficient and vast in the field of Digital Signal Processing and Communication. Verilog implementation of the floating point FFT with reduced generation logic or reduced complexity is the proposed architecture, where the
-two inputs and two outputs of butterflies can be used to exchange all data and addresses in FFT dispensation, can be stored or reordered. 
+FFT is responsible for converting a signal into individual spectral components and thereby providing frequency information about the signal. The implementation of FFT is vast in the field of Digital Signal Processing and Communication. Verilog implementation of the FFT with reduced generation logic or reduced complexity is the proposed architecture, where the
+two inputs and two outputs of butterflies can be used to exchange all data and addresses in FFT dispensation. 
 
 INTRODUCTION:
 
