@@ -1,6 +1,5 @@
 # FFT-using-Verilog(RADIX-2)
- [![Generic badge](https://img.shields.io/badge/verilog_test-passed-green.svg)](https://user-images.githubusercontent.com/61559101/149679742-aa483326-4be3-44d3-9614-799231f2a018.png)
-
+ [![Generic badge](https://img.shields.io/badge/verilog_test-passed-green.svg)](https://user-images.githubusercontent.com/61559101/149683928-9bd5e01a-7351-4434-baf7-759a53e8548d.png)
 [![Generic badge](https://img.shields.io/badge/RTL-schematic-red.svg)](https://user-images.githubusercontent.com/61559101/142258670-43d4ec95-bba3-4086-84b8-b5293848a852.PNG)
 
 
