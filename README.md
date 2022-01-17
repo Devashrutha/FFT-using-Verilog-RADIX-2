@@ -79,4 +79,11 @@ Summary:
 8) The twiddle factor exponents are a function of the stage index m and is given by k=(N*t/2^m) where, t=0,1,2,.....2^(m-1) -1.
 9) The number of sets or sections of butterflies in each stage is given by the formula
 2^(M-m).
-10)The exponent repeat factor (ERF), which is the number of times the exponent sequence associated with m is repeated is given by 2^(M-n).`
+10)The exponent repeat factor (ERF), which is the number of times the exponent sequence associated with m is repeated is given by 2^(M-n).
+
+
+EDA PLAYGROUND OUTPUTS:
+
+
+<img width="1392" alt="Screenshot 2022-01-17 at 12 15 34 AM" src="https://user-images.githubusercontent.com/61559101/149684012-0de874f2-18d3-4d90-974e-b338d6e30d4d.png">
+
